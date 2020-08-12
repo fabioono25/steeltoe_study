@@ -17,6 +17,8 @@ namespace SteeltoePlayground
                 {
                     webBuilder.UseStartup<Startup>();
                 })
+            .AddHealthActuator()
+            .AddInfoActuator()
             .AddLoggersActuator();
     }
 }
